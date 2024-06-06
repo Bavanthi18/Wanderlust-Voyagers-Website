@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+
+:root{
+  --main-color:#FFA500;
+  --black:#222;
+  --white:#fff;
+  --light-black:#777;
+  --light-white:#fff9;
+  --dark-bg:rgba(0,0,0,0.7);
+  --light-bg:#eee;
+  --border:.1rem solid #FF8C00;
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+
+}
+
+
+*{
+  font-family: "Nunito", sans-serif;
+  margin:0; padding: 0;
+  box-sizing: border-box;
+  outline: none; 
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+
+}
+
+
+
+
+
+.selectservice input[type="text"], input[type="email"], input[type="number"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  background-color: #fff;
+  color: #333;
+}
+
+
+.selectservice label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .selectservice input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .selectservice input[type="radio"] + span {
+    margin-right: 15px;
+    border: 1px solid var(--main-color);
+  }
+  
+  .selectservice input[type="radio"]:checked + span {
+    font-weight: bold;
+    border: 1px solid var(--main-color);
+  }
+ 
+  
+  /* Style for the radio button appearance */
+  .selectservice input[type="radio"]::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color); /* Replace with your desired color */
+    background-color: #fff; /* Replace with your desired color */
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  /* Style for the checked radio button appearance */
+  .selectservice input[type="radio"]:checked::before {
+    background-color: var(--main-color); /* Replace with your desired color */
+  }
+
+  .selectservice label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .selectservice select {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+  }
+  
+  .selectservice option[hidden] {
+    display: none;
+  }
+  .selectservice label {
+    font-weight: bold;
+    margin-right: 5px;
+    
+  }
+  
+  .selectservice input[type="checkbox"] {
+    margin-right: 5px;
+    border: 1px solid white;
+  }
+  
+  
+  .selectservice br {
+    margin-bottom: 10px;
+  
+  }
+
+  
+  /* Style for the checkbox appearance */
+  .selectservice input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--main-color); /* Replace with your desired color */
+    background-color: white; /* Replace with your desired color */
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  /* Style for the checked checkbox appearance */
+  .selectservice input[type="checkbox"]:checked::before {
+    background-color: var(--main-color); /* Replace with your desired color */
+  }
+
+
+.selectservice .btn{
+    width: 20%;
+    background:linear-gradient(45deg, var(--main-color), rgb(246, 146, 74));
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
